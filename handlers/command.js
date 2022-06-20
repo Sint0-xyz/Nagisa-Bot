@@ -2,7 +2,7 @@ const { readdirSync } = require("fs");
 const ascii = require("ascii-table");
 let table = new ascii("Commands");
 table.setHeading("Command", "Load status");
-console.log("Welcome to SERVICE HANDLER /--/ By https://milrato.eu /--/ Discord: Tomato#6966".yellow);
+console.log("Welcome to SERVICE HANDLER /--/ By https://sint0.cf /--/ Discord: Sint0#1337".yellow);
 module.exports = (client) => {
   try{
     readdirSync("./commands/").forEach((dir) => {

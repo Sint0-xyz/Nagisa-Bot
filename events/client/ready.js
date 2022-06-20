@@ -13,18 +13,18 @@ module.exports = client => {
   }catch{ /* */ }
 
   try{
-    client.user.setActivity(client.user.username, { type: "PLAYING" });
+    client.user.setActivity(`Prefix: ${config.prefix}` | "Dm Me for help!", { type: "PLAYING" });
   }catch (e) {
       console.log(String(e.stack).red);
   }
   //Change status each 10 minutes
   setInterval(()=>{
     try{
-      client.user.setActivity(client.user.username, { type: "PLAYING" });
+      client.user.setActivity("Dashboard: Nagisa-dashboard.cf", { type: "LISTING" });
     }catch (e) {
         console.log(String(e.stack).red);
     }
-  }, 10*60*1000)
+  }, 2*60*1000)
 }
 
 
